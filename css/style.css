@@ -41,7 +41,7 @@ body {
  }
 
  @media (max-width: 680px) {
-    #nav{display: none;}
+    nav{display: none;}
 }
 
  nav p {
