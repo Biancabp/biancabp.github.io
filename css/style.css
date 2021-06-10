@@ -1,0 +1,137 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+/*para que o preenchimento e a borda se encaixem na altura e largura*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+ ul { /*menu*/
+    /*tirar os pontinhos da lista*/
+    list-style: none ;
+    /*deixar todos um do lado do outro*/
+    display: flex;  
+    text-decoration: none;
+ }
+ 
+ a {
+    text-decoration: none;
+    color: white;
+
+}
+
+ li {
+    /*separar as palavras do menu*/
+   margin: 0 30px;
+   text-decoration: none;
+ }
+
+ nav{
+    /*o nome da logo do lado dos nomes do menu*/
+    display: flex;
+    /*nome da logo e o do menu separados*/
+    justify-content: space-around;
+    /*margem da borda*/
+    margin: auto 30px;
+ }
+
+ @media (max-width: 680px) {
+    #nav{display: none;}
+}
+
+ nav p {
+     font-weight:500;
+     margin: auto 0;
+     color:  #fff4f0;
+     font-size: x-large;
+ }
+
+ button {
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 15px;
+    border: 0;
+    background: linear-gradient(to right,  #b1905f, #ac8449);
+    color: #1c1410;
+    font-family: 'Montserrat', sans-serif;
+}
+
+button::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    background: linear-gradient(45deg, #805d47, #805d47);
+    transform: scaleX(0);
+    transition: all .3s ease-in-out;
+    transform-origin: left;
+}
+
+
+button:hover {
+    letter-spacing: 0.2px;
+    background: linear-gradient(to right, #4131299b, #25201d);
+    color: #b1905f;
+}
+
+
+ .header {
+    height: calc(100vh - 150px);
+    background: url('https://images.unsplash.com/photo-1620815498155-a09c73b5fce1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=753&q=80'); 
+    background-size: cover;/*imagem cobre toda área do div*/
+}
+
+ header{
+    border-bottom: 1px solid #E2E8F0;
+}
+
+ .header-content {
+ 
+ color: rgb(251, 238, 238);
+}
+
+.header-content {
+    max-width: 400px;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.header-content h1 {
+    margin-bottom: 10px;
+    font-size: 4rem;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    max-width: 12000px;
+    margin: 0 auto;
+}
+
+
+.nav-item {
+    margin-left: 2rem;
+}
+
+.nav-link{
+    font-size: 1.2rem;
+    font-weight: 400;
+    color:  #f5dbac;
+    
+}
+
+.nav-link:hover{
+    transition: 0.5s ease;
+    color: #af956f;
+    font-weight: 400;
+}
