@@ -42,8 +42,8 @@ body {
  }
 
  @media (max-width: 680px) {
-    .nav{
-        display: none;
+    #menu{
+        display:none !important;
     }
 }
 
