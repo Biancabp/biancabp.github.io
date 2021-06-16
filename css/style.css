@@ -47,6 +47,7 @@ body {
     }
 }
 
+
  nav p {
      font-weight:500;
      margin: auto 0;
@@ -90,10 +91,7 @@ button:hover {
     height: calc(100vh - 150px);
     background: url('https://images.unsplash.com/photo-1620815498155-a09c73b5fce1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=753&q=80'); 
     background-size: cover;/*imagem cobre toda área do div*/
-}
-
- header{
-    border-bottom: 1px solid #E2E8F0;
+    background-attachment: fixed;
 }
 
  .header-content {
@@ -134,10 +132,10 @@ button:hover {
 }
 
 .nav-link:hover{
-    transition: 0.5s ease;
+    transition: all 0.5s ease;
     color: #af956f;
-    font-weight: 400;
 }
+
 
 .pacotes {
     background: #af956f;
