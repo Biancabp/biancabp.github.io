@@ -167,6 +167,15 @@ button:hover {
     
 }
 
+.card{
+    transition: all 0.3s ease-out;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
 .pacotes .card-image {
     width: 250px;
     height: 200px;
